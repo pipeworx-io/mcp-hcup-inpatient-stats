@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-hcup-inpatient-stats",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "HCUP Inpatient Stats — national hospitalization discharges, costs and outcomes by condition and year.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-hcup-inpatient-stats": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "hcup-inpatient-stats"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-hcup-inpatient-stats.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/hcup-inpatient-stats",
   "pipeworx": {
-    "sourceHash": "v1-88df8b4a314a8cab0f827fa1ea9d4a8d777fe77c3ea40f65ad30011e353a8bbc",
-    "sourceCommit": "712a5e0171ea24483214329d0cd7efdfd9b80352"
+    "mode": "gateway",
+    "slug": "hcup-inpatient-stats",
+    "gatewaySlug": "hcup-inpatient-stats",
+    "sourceHash": "v1-27eff91d84cb324df96ccc3c10b79618ca2904a4dac2b27c61b0f9b7b764a2d3",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
