@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-hcup-inpatient-stats",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "HCUP Inpatient Stats — national hospitalization discharges, costs and outcomes by condition and year.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "hcup-inpatient-stats",
     "gatewaySlug": "hcup-inpatient-stats",
-    "sourceHash": "v1-27eff91d84cb324df96ccc3c10b79618ca2904a4dac2b27c61b0f9b7b764a2d3",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-a041d23212a8038fe9cb299238557dfe26ed7985b326d2eb8313eab3acad6d96",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
